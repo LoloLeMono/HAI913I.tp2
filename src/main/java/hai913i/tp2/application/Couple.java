@@ -134,7 +134,6 @@ public class Couple {
             }
         }
         
-        System.out.println("Valeur couplage totale : " + total);
         return graph;
     }
 

@@ -32,30 +32,12 @@ public class Cluster {
 			
 			System.out.println(pair.getLeft() + " avec " + pair.getRight());
 //			System.out.println(pair.getRight());
-			try {
-				Thread.sleep(1000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+
 		}
 			
 		System.out.println("\n");
 		System.out.println("==========================");
 		System.out.println("\n");
-
-		
-//		System.out.println("Liste des clusters restants : ");
-//			
-//		for (String cluster : listCluster) {
-//			
-//			System.out.println(cluster);
-//		}
-//			
-//		System.out.println("\n");
-//		System.out.println("==========================");
-//		System.out.println("\n");
-		
 
 
 	}
@@ -132,7 +114,7 @@ public class Cluster {
             listCluster.remove(bestCluster1);
             listCluster.remove(bestCluster2);
             listCluster.add(bestCluster1 + "." + bestCluster2);
-//            System.out.println("Nouveau cluster créer : " + bestCluster1 + "." + bestCluster2);
+            
             dendro.add(new Pair<String, String>(bestCluster1, bestCluster2));
         }
 
